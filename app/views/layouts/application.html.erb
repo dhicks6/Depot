@@ -1,3 +1,5 @@
+<!--
+  This is the code generated from rails generate scaffold
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,5 +13,30 @@
 
   <body>
     <%= yield %>
+  </body>
+</html>
+-->
+<!--
+Below is the code from the book.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Depot</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all',
+    'data-turbolinks-track': 'reload' %>
+    <%= javascript_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <main class='<%= controller.controller_name %>'>
+      <%= yield %>
+    </main>
+
   </body>
 </html>
